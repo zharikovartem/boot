@@ -142,115 +142,229 @@
 
     <!-- 3D Визуализация -->
     <div class="container-fluid text-center">
-            <span class="text-center" style="color:aliceblue;">
-                    <h1 class="mt-4">3D Визуализация</h1>
-                </span>
-                <div class="row">
-                    <div class="col-7 mt-5  w-90">
-                            <img src="" alt="" class="d-block position-absolute mt-0" id="needTop" onclick="changeTop(null);">
-                            <!-- <img src="" alt="" class="d-block position-absolute mt-0 pull-right" id="needWall" > второй элемент -->
-                            <img src="img/3d.jpg" alt="" class="d-block w-100  mt-0" id="parentImage">
-                            
+        <span class="text-center" style="color:aliceblue;">
+            <h1 class="mt-4">3D Визуализация</h1>
+        </span>
+        <div class="row">
+            <div class="col-7 mt-5  w-90">
+                <img src="" alt="" class="d-block position-absolute mt-0" id="needTop" onclick="changeTop(null);">
+                <!-- <img src="" alt="" class="d-block position-absolute mt-0 pull-right" id="needWall" > второй элемент -->
+                <img src="img/3d.jpg" alt="" class="d-block w-100  mt-0" id="parentImage">
 
+
+            </div>
+            <div class="col-4 mt-5">
+                <div class="row">
+                    <div class="col-4 mt-5 mb-5">
+                        <button type="button" class="btn btn btn-light mr-1" onclick="glian();">Глянцевые</button>
                     </div>
-                    <div class="col-4 mt-5">
-                            <div class="row">
-                                <div class="col-4 mt-5 mb-5">
-                                        <button type="button" class="btn btn btn-light mr-1" onclick="glian();">Глянцевые</button>
-                                </div>
-                                <div class="col-4 mt-5 mb-5">
-                                        <button type="button" class="btn btn btn-light mr-1" onclick="mat();">Матовый</button>
-                                </div>
-                                <div class="col-4 mt-5 mb-5">
-                                        <button type="button" class="btn btn btn-light mr-1" onclick="satin();">Сатин</button>
-                                </div>
-                            </div>
-                            <div class="row">
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(255, 255, 255);" onclick="changeTop('rgb(255, 255, 255)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(169, 208, 230);" onclick="changeTop('rgb(169, 208, 230)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(166, 167, 173);" onclick="changeTop('rgb(166, 167, 173)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(50, 110, 134);" onclick="changeTop('rgb(50, 110, 134)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(65, 38, 40);" onclick="changeTop('rgb(65, 38, 40)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(32, 28, 32);" onclick="changeTop('rgb(32, 28, 32)');"></div>
-                                    </div>
-                                    <!--  -->
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(234, 139, 81);" onclick="changeTop('rgb(234, 139, 81)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(255, 223, 80);" onclick="changeTop('rgb(255, 223, 80)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(249, 255, 161);" onclick="changeTop('rgb(249, 255, 161)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(43, 199, 230);" onclick="changeTop('rgb(43, 199, 230)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(0, 143, 223);" onclick="changeTop('rgb(0, 143, 223)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(0, 56, 110);" onclick="changeTop('rgb(0, 56, 110)');"></div>
-                                    </div>
-                                    <!--  -->
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(126, 23, 110);" onclick="changeTop('rgb(126, 23, 110)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(255, 207, 163);" onclick="changeTop('rgb(255, 207, 163)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(149, 115, 175);" onclick="changeTop('rgb(149, 115, 175)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(255, 67, 127);" onclick="changeTop('rgb(255, 67, 127)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(255, 54, 57);" onclick="changeTop('rgb(255, 54, 57)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(183, 42, 49);" onclick="changeTop('rgb(83, 42, 49)');"></div>
-                                    </div>
-                                    <!--  -->
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(0, 179, 197);" onclick="changeTop('rgb(0, 179, 197)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(204, 239, 244);" onclick="changeTop('rgb(204, 239, 244)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(40, 189, 181);" onclick="changeTop('rgb(40, 189, 181)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(80, 156, 125);" onclick="changeTop('rgb(80, 156, 125)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(0, 176, 55);" onclick="changeTop('rgb(0, 176, 55)');"></div>
-                                    </div>
-                                    <div class="col-2 mt-1">
-                                            <div class="colorch" style="background-color: rgb(153, 168, 0);" onclick="changeTop('rgb(153, 168, 0)');"></div>
-                                    </div>
-                            </div>
+                    <div class="col-4 mt-5 mb-5">
+                        <button type="button" class="btn btn btn-light mr-1" onclick="mat();">Матовый</button>
+                    </div>
+                    <div class="col-4 mt-5 mb-5">
+                        <button type="button" class="btn btn btn-light mr-1" onclick="satin();">Сатин</button>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(255, 255, 255);"
+                            onclick="changeTop('rgb(255, 255, 255)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(169, 208, 230);"
+                            onclick="changeTop('rgb(169, 208, 230)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(166, 167, 173);"
+                            onclick="changeTop('rgb(166, 167, 173)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(50, 110, 134);"
+                            onclick="changeTop('rgb(50, 110, 134)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(65, 38, 40);"
+                            onclick="changeTop('rgb(65, 38, 40)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(32, 28, 32);"
+                            onclick="changeTop('rgb(32, 28, 32)');"></div>
+                    </div>
+                    <!--  -->
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(234, 139, 81);"
+                            onclick="changeTop('rgb(234, 139, 81)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(255, 223, 80);"
+                            onclick="changeTop('rgb(255, 223, 80)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(249, 255, 161);"
+                            onclick="changeTop('rgb(249, 255, 161)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(43, 199, 230);"
+                            onclick="changeTop('rgb(43, 199, 230)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(0, 143, 223);"
+                            onclick="changeTop('rgb(0, 143, 223)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(0, 56, 110);"
+                            onclick="changeTop('rgb(0, 56, 110)');"></div>
+                    </div>
+                    <!--  -->
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(126, 23, 110);"
+                            onclick="changeTop('rgb(126, 23, 110)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(255, 207, 163);"
+                            onclick="changeTop('rgb(255, 207, 163)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(149, 115, 175);"
+                            onclick="changeTop('rgb(149, 115, 175)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(255, 67, 127);"
+                            onclick="changeTop('rgb(255, 67, 127)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(255, 54, 57);"
+                            onclick="changeTop('rgb(255, 54, 57)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(183, 42, 49);"
+                            onclick="changeTop('rgb(83, 42, 49)');"></div>
+                    </div>
+                    <!--  -->
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(0, 179, 197);"
+                            onclick="changeTop('rgb(0, 179, 197)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(204, 239, 244);"
+                            onclick="changeTop('rgb(204, 239, 244)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(40, 189, 181);"
+                            onclick="changeTop('rgb(40, 189, 181)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(80, 156, 125);"
+                            onclick="changeTop('rgb(80, 156, 125)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(0, 176, 55);"
+                            onclick="changeTop('rgb(0, 176, 55)');"></div>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div class="colorch" style="background-color: rgb(153, 168, 0);"
+                            onclick="changeTop('rgb(153, 168, 0)');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Карнизы -->
+    <div class="container-fluid p-0 min-vh-100">
+        <span class="text-center" style="color:aliceblue;">
+            <h1 class="mt-4">Освещение и карнизы</h1>
+        </span>
+        <div class="row text-center mt-10">
+            <div class="col-6">
+                <h2><a href="#" class="naw-link" onclick="showLustri(); return false;">Светильники и люстры</a></h2>
+            </div>
+            <div class="col-6">
+                <h2><a href="#" class="naw-link" onclick="showKarnizy(); return false;">Карнизы</a></h2>
+            </div>
+        </div>
+        <div class="row text-center h-100 w-100">
+            <div class="col-12 border h-80" id="karnizy">
+                <!-- 65968 -->
+                <div class="row">
+                    <div class="col-8 border">
+                        <div id="skrytiySPeregibom" class="karnizy">
+                            <img src="img/a31.jpg" alt="" class="img-fluid w-100 ml-2">
+                            <p class="text-justify w-100 ml-2 mt-2" style="background-color: white;">
+                                Инновационная конструкция, изготавливаемая при помощи специального профиля,
+                                разработанного
+                                компанией Ferico, позволяет установить карниз за основным полотном натяжного потолка.
+                                Данный
+                                вид карниза можно дополнить светодиодной подсветкой, установка которой обеспечит
+                                равномерное
+                                засвечивание карниза по всей длине при минимальной потере высоты помещения (от 5 см).
+                            </p>
+                        </div>
+                        <div id="skrytiyBezPeregiba" hidden class="karnizy">
+                            <img src="img/a5.jpg" alt="" class="img-fluid w-100 ml-2">
+                            <p class="text-justify w-100 ml-2 mt-2" style="background-color: white;">
+                                Инновационная конструкция, изготавливаемая при помощи специального профиля,
+                                разработанного
+                                компанией Ferico, позволяет установить карниз за основным полотном натяжного потолка.
+                                Данный
+                                вид карниза можно дополнить светодиодной подсветкой, установка которой обеспечит
+                                равномерное
+                                засвечивание карниза по всей длине при минимальной потере высоты помещения (от 5 см). 
+                            </p>
+                        </div>
+                        <div id="pvhPotolocn" hidden class="karnizy">
+                                <img src="img/karnizy-12.jpg" alt="" class="img-fluid w-100 ml-2">
+                                <p class="text-justify w-100 ml-2 mt-2" style="background-color: white;">
+                                    Инновационная конструкция, изготавливаемая при помощи специального профиля,
+                                    разработанного
+                                    компанией Ferico, позволяет установить карниз за основным полотном натяжного потолка.
+                                    Данный
+                                    вид карниза можно дополнить светодиодной подсветкой, установка которой обеспечит
+                                    равномерное
+                                    засвечивание карниза по всей длине при минимальной потере высоты помещения (от 5 см).
+                                </p>
+                            </div>
+                    </div>
+                    <div class="col-4 border">
+                        <button type="button" class="btn btn btn-light m-3 active"
+                            onclick="changeKarniz('skrytiySPeregibom');">Скрытый карниз с
+                            перегибом</button>
+                        <button type="button" class="btn btn btn-light m-3" onclick="changeKarniz('skrytiyBezPeregiba');">Скрытый карниз без
+                            перегибом</button>
+                        <!-- <button type="button" class="btn btn btn-light m-3" onclick="changeKarniz('skrytiyChactPeregib');">Скрытый карниз с
+                            частичным перегибом</button> -->
+                        <button type="button" class="btn btn btn-light m-3" onclick="changeKarniz('pvhPotolocn');">Потолочный карниз
+                            ПВХ</button>
+                        <button type="button" class="btn btn btn-light m-3" onclick="glian();">Пристенный
+                            карниз</button>
+                    </div>
+                    <!-- 123456 -->
+                </div>
+            </div>
+        </div>
+        <!-- Люстры: -->
+        <div class="row text-center h-100 w-100" id="lustri" hidden>
+            <div class="col-12 border h-80" id="karnizy">
+                <!-- Люстры: -->
+                <div class="row">
+                    <div class="col-8 border">
+                        <img src="img/vizitka1 — копия.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-4 border">
+                        <button type="button" class="btn btn btn-light m-3" onclick="glian();">Светильники</button>
+                        <button type="button" class="btn btn btn-light m-3" onclick="glian();">Люстры</button>
+                        <!-- <button type="button" class="btn btn btn-light m-3" onclick="glian();">Скрытый карниз с частичным перегибом</button>
+                        <button type="button" class="btn btn btn-light m-3" onclick="glian();">Потолочный карниз ПВХ</button>
+                        <button type="button" class="btn btn btn-light m-3" onclick="glian();">Пристенный карниз</button> -->
+                    </div>
+                    <!-- 123456 -->
+                </div>
+            </div>
+        </div>
     </div>
 
 
 
-
-            
-    <input type="button" value="try" onclick="tryThis();">
+    <!-- <input type="button" value="try" onclick="tryThis();"> -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

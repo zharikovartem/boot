@@ -43,3 +43,21 @@ function satin()  {
   setInterval (function(){  //Тестовое изменение размера через 0.1 сек. 
     changeTop(null);
   },100);
+
+  function showLustri() {
+    document.getElementById('karnizy').hidden=true;
+      document.getElementById('lustri').hidden=false;
+  }
+  function showKarnizy() {
+    document.getElementById('lustri').hidden=true;
+      document.getElementById('karnizy').hidden=false;
+  }
+
+function changeKarniz(karnizType) {
+    var vseKarnizy = document.getElementsByClassName('karnizy');
+    for (var i =0; i < vseKarnizy.length; i++) {
+        vseKarnizy[i].hidden = true;
+        //console.log(i);
+    }
+    document.getElementById(karnizType).hidden=false;
+}
