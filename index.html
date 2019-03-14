@@ -18,7 +18,7 @@
     <!-- Меню -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="try">
         <a href="#" class="navbar-brand">
-            <img src="img/arrow.png" width="40" height="40" alt="logo">
+            <img src="img/logo1s.png" width="40" height="40" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,12 +43,12 @@
                 </li>
             </ul>
         </div>
-        <form class="form-inline my-2 my-lg-0">
+        <!-- <form class="form-inline my-2 my-lg-0">
             <input type="text" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0">Search</button>
-        </form>
+        </form> -->
     </nav>
-    <!-- Слайдер -->
+    <!-- Слайдер (ВИЗИТКА) -->
     <div class="container-fluid p-0">
         <div id="caruselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -58,14 +58,40 @@
 
             </ol>
             <div class="carousel-inner">
+
+
                 <div class="carousel-item active">
-                    <img src="img/primer1.jpg" alt="" class="d-block w-100" height="700">
+                    <div class="d-block position-absolute justify-content-center">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <img src="img/10Let/10let.png" alt="" class="h-25">
+                            </div>
+                            <div class="col-md-6 col-sm-12 justify-content-left">
+                                <h3>- Опыт работы монтажников от 5 лет!</h3>
+                                <h3>- Весь персоонал имеет допуск к работе с газовым оборудованием</h3>
+                                <h3>- Монтаж без пыли</h3>
+                                <h3>- установка за 24 часа</h3>
+                                <img src="img/10Let/10waranty.png" alt="" class="h-25">
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/primer2.jpg" alt="" class="d-block w-100" height="500">
                 </div>
+
+
+
                 <div class="carousel-item">
-                    <img src="img/primer2.jpg" alt="" class="d-block w-100" height="700">
+                    <div class="position-absolute col-12 ">
+                            <h1 class="text-danger font-weight-bold text-center mt-3">Рассрочка до 12 месяцев!!!</h1>
+                            <img src="img/rassrochka/halva-karta.gif" alt="" class="mt-5 col-12">
+                    </div>
+                    <img src="img/primer3.jpg" alt="" class="d-block w-100" height="500">
                 </div>
+
+
+
                 <div class="carousel-item">
-                    <img src="img/primer3.jpg" alt="" class="d-block w-100" height="700">
+                    <img src="img/primer1.jpg" alt="" class="d-block w-100" height="500">
                 </div>
             </div>
             <!-- <a href="#caruselExampleIndicators" class="carousel-control-prev" role="button" data-slide="prev">
@@ -308,31 +334,33 @@
                                 Данный
                                 вид карниза можно дополнить светодиодной подсветкой, установка которой обеспечит
                                 равномерное
-                                засвечивание карниза по всей длине при минимальной потере высоты помещения (от 5 см). 
+                                засвечивание карниза по всей длине при минимальной потере высоты помещения (от 5 см).
                             </p>
                         </div>
                         <div id="pvhPotolocn" hidden class="karnizy">
-                                <img src="img/karnizy-12.jpg" alt="" class="img-fluid w-100 ml-2">
-                                <p class="text-justify w-100 ml-2 mt-2" style="background-color: white;">
-                                    Инновационная конструкция, изготавливаемая при помощи специального профиля,
-                                    разработанного
-                                    компанией Ferico, позволяет установить карниз за основным полотном натяжного потолка.
-                                    Данный
-                                    вид карниза можно дополнить светодиодной подсветкой, установка которой обеспечит
-                                    равномерное
-                                    засвечивание карниза по всей длине при минимальной потере высоты помещения (от 5 см).
-                                </p>
-                            </div>
+                            <img src="img/karnizy-12.jpg" alt="" class="img-fluid w-100 ml-2">
+                            <p class="text-justify w-100 ml-2 mt-2" style="background-color: white;">
+                                Инновационная конструкция, изготавливаемая при помощи специального профиля,
+                                разработанного
+                                компанией Ferico, позволяет установить карниз за основным полотном натяжного потолка.
+                                Данный
+                                вид карниза можно дополнить светодиодной подсветкой, установка которой обеспечит
+                                равномерное
+                                засвечивание карниза по всей длине при минимальной потере высоты помещения (от 5 см).
+                            </p>
+                        </div>
                     </div>
                     <div class="col-4 border">
                         <button type="button" class="btn btn btn-light m-3 active"
                             onclick="changeKarniz('skrytiySPeregibom');">Скрытый карниз с
                             перегибом</button>
-                        <button type="button" class="btn btn btn-light m-3" onclick="changeKarniz('skrytiyBezPeregiba');">Скрытый карниз без
+                        <button type="button" class="btn btn btn-light m-3"
+                            onclick="changeKarniz('skrytiyBezPeregiba');">Скрытый карниз без
                             перегибом</button>
                         <!-- <button type="button" class="btn btn btn-light m-3" onclick="changeKarniz('skrytiyChactPeregib');">Скрытый карниз с
                             частичным перегибом</button> -->
-                        <button type="button" class="btn btn btn-light m-3" onclick="changeKarniz('pvhPotolocn');">Потолочный карниз
+                        <button type="button" class="btn btn btn-light m-3"
+                            onclick="changeKarniz('pvhPotolocn');">Потолочный карниз
                             ПВХ</button>
                         <button type="button" class="btn btn btn-light m-3" onclick="glian();">Пристенный
                             карниз</button>
