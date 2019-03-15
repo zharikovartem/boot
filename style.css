@@ -89,3 +89,6 @@ body {
         width: 1200px;
     }
 }
+.test {
+    border: 1px solid red;
+}
