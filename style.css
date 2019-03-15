@@ -58,7 +58,7 @@ body {
   }
   .vizitka {
       /* background-image: url(img/primer5.jpg); */
-      background-size: cover;
+      /* background-size: cover; */
       /* min-height: 700px; */
       /* height: 700px; */
       height: 90vh;
@@ -71,7 +71,7 @@ body {
       color: white;
   }
   .p-md {
-    font-size: calc(11px + 2vw);
+    font-size: calc(11px + 1.8vw);
     /* font-size: 3vw; */
     color: rgb(7, 7, 7);
     /* margin-top: 2px; */
@@ -84,7 +84,7 @@ body {
   .mycol {
     width: 100%;
 }
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
     .mycol {
         width: 1200px;
     }
