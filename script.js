@@ -1,14 +1,14 @@
 window.onload = changeTop('rgb(255, 255, 255)');
+window.onload = hideMenu();
+
+var timerId = setInterval(function() { //запускаем проверку на меню
+    //console.log( "тик" );
+    checkMenu();
+  }, 10);
+
+
 //document.getElementById('needTop').onresize = console.log('!!!');
-function tryThis() {
-    console.log(document.getElementById('try').hidden);
-    
-    if (document.getElementById('try').hidden == true) {
-        document.getElementById('try').hidden= false;
-    } else {
-        document.getElementById('try').hidden= true ;
-    }
-}
+
 function changeTop(needColor) {
     //console.log(document.getElementById('needTop').style.borderTopColor);
     var color;
@@ -60,4 +60,56 @@ function changeKarniz(karnizType) {
         //console.log(i);
     }
     document.getElementById(karnizType).hidden=false;
+}
+function hideMenu() {
+    console.log('Высота окна: '+document.documentElement.clientHeight);
+    console.log('Высота прокрутки: '+window.pageYOffset);
+
+    var fullView = document.documentElement.clientHeight;
+    var curentScroll = window.pageYOffset
+    var fullWidth = document.documentElement.clientWidth;
+
+    if (curentScroll < fullView) {
+        if(fullWidth >= 992) {
+            document.getElementById('menu').hidden= true;
+        }
+    } else {
+        document.getElementById('menu').hidden= false ;
+    }
+}
+
+function showMenu() {
+    setInterval(function() {
+    //////Выводим меню:
+        var menu = document.getElementById('menu');
+        menu.style.position = 'fixed';
+        menu.style.width = '100%';
+        var tryIt = menu.style.top;
+        document.getElementById('menu').hidden= false ;
+        if(tryIt == '') { // задали top
+            
+            menu.style.top = '-66px';
+        } else {
+            //console.log(parseInt(menu.style.top, 10));
+            menu.style.top = parseInt(menu.style.top, 10)+1+'px';
+        }
+        if (parseInt(menu.style.top, 10) >= 0) {
+            //console.log('!!!');
+            clearInterval();
+        } 
+    }, 20);
+    //////прячем меню
+}
+
+function checkMenu() {
+    var fullView = document.documentElement.clientHeight;
+    var curentScroll = window.pageYOffset;
+    var fullWidth = document.documentElement.clientWidth;
+    
+    if(fullView <= curentScroll) { //проверяем прокрутку
+        console.log('nado!!!');
+        clearInterval(timerId);
+    } else {
+        console.log('net!!!');
+    }
 }

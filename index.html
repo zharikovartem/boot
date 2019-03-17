@@ -16,7 +16,7 @@
 
 <body>
     <!-- Меню -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="try">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="menu">
         <a href="#" class="navbar-brand">
             <img src="img/logo1s.png" width="40" height="40" alt="logo">
         </a>
@@ -60,29 +60,34 @@
             <div class="carousel-inner">
 
                 <!-- 1 -->
-                <div class="carousel-item active vizitka" >
-                    <div class="container-fluid h-100"
+                <div class="carousel-item active vizitka">
+                    <div class="container-fluid h-100 "
                         style="background-image: url(img/primer2.jpg); background-size: cover;">
-
-                        <div class="d-block position-absolute justify-content-center">
-                            <div class="row">
-                                <div class="col-md-4 col-sm-6 w-75">
-                                    <img src="img/10Let/10let.png" alt="" class="w-100"><!--10 лет на рынке-->
-                                </div>
-                                <div class="col-md-8 col-sm-6 justify-content-left">
+                        <div class="row">
+                            <div class="col-4  heig1">
+                                <img src="img/10Let/10let.png" alt="" class="w-100">
+                            </div>
+                            <div class="col-8  heig1">
+                                <div class="div">
                                     <p class="p-md text-dark"><b>- Опыт работы монтажников от 5 лет!</b></p>
                                     <p class="p-md text-dark"><b>- Весь персоонал имеет допуск к работе с газовым
                                             оборудованием</b></p>
                                     <p class="p-md text-dark"><b>- Монтаж без пыли</b></p>
                                     <p class="p-md text-dark"><b>- установка за 24 часа</b></p>
-                                    <div class="col-sm-6"></div>
-                                    <div class="col-12 col-sm-6 w-75">
-                                        <img src="img/10Let/10waranty.png" alt="" class="w-100"><!--10 лет гарантии-->
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                        
+                        <div class="row">
+                            <div class="col-2 col-sm-6 col-md-8 col-lg-9 col-xl-6
+                                              heig1">
+
+                            </div>
+                            <div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-6 
+                                             heig1">
+                                <img src="img/10Let/10waranty.png" alt="" class="img-fluid h-100 float-right">
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -92,7 +97,8 @@
                     <div class="container-fluid h-100"
                         style="background-image: url(img/primer3.jpg); background-size: cover;">
                         <div class="position-absolute col-12 ">
-                            <h1 class="font-weight-bold text-center mt-3" style="font-size: 8vh; color: red;">Рассрочка до 12 месяцев!!!</h1>
+                            <h1 class="font-weight-bold text-center mt-3" style="font-size: 8vh; color: red;">Рассрочка
+                                до 12 месяцев!!!</h1>
                             <img src="img/rassrochka/halva-karta.gif" alt="" class="mt-5 col-12 ">
                         </div>
                         <!-- <img src="img/primer3.jpg" alt="" class="d-block w-100" height="700"> -->
@@ -447,48 +453,54 @@
 
     <div class="container-fluid p-0 mycol h-100 mb-5">
         <div style="height: 500px; border: 10px solid red; background-color: antiquewhite;">
-            <div class="row"> <!--Линия-->
-                <div class="col-md-6 col-sm-12 test mt-3"> <!--1й блок-->
+            <div class="row">
+                <!--Линия-->
+                <div class="col-md-6 col-sm-12 test mt-3">
+                    <!--1й блок-->
                     <div class="row">
-                            <div class="col-8 test mt-3">
-                                <label class="float-right mt-1" for="space">площадь помещения (м<sup>2</sup>)</label>
-                            </div>
-                            <div class="col-4 test mt-3">
-                                <input type="text" name="space" style="width: 60px;">
-                            </div>
+                        <div class="col-8 test mt-3">
+                            <label class="float-right mt-1" for="space">площадь помещения (м<sup>2</sup>)</label>
+                        </div>
+                        <div class="col-4 test mt-3">
+                            <input type="text" name="space" style="width: 60px;">
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 test mt-3"> <!--2й блок-->
+                <div class="col-md-6 col-sm-12 test mt-3">
+                    <!--2й блок-->
                     <div class="row">
-                            <div class="col-8 test mt-3">
-                                <label class="float-right mt-1" for="space">Светильники (шт)</label>
-                            </div>
-                            <div class="col-4 test mt-3">
-                                <input type="text" name="space" style="width: 60px;">
-                            </div>
+                        <div class="col-8 test mt-3">
+                            <label class="float-right mt-1" for="space">Светильники (шт)</label>
+                        </div>
+                        <div class="col-4 test mt-3">
+                            <input type="text" name="space" style="width: 60px;">
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row"> <!--Линия-->
-                <div class="col-md-6 col-sm-12 test mt-3"> <!--1й блок-->
+            <div class="row">
+                <!--Линия-->
+                <div class="col-md-6 col-sm-12 test mt-3">
+                    <!--1й блок-->
                     <div class="row">
-                            <div class="col-8 test mt-3">
-                                <label class="float-right mt-1" for="space">Количество углов (шт)</label>
-                            </div>
-                            <div class="col-4 test mt-3">
-                                <input type="text" name="space" style="width: 60px;">
-                            </div>
+                        <div class="col-8 test mt-3">
+                            <label class="float-right mt-1" for="space">Количество углов (шт)</label>
+                        </div>
+                        <div class="col-4 test mt-3">
+                            <input type="text" name="space" style="width: 60px;">
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 test mt-3"> <!--2й блок-->
+                <div class="col-md-6 col-sm-12 test mt-3">
+                    <!--2й блок-->
                     <div class="row">
-                            <div class="col-8 test mt-3">
-                                <label class="float-right mt-1" for="space">Количество люстр (шт)</label>
-                            </div>
-                            <div class="col-4 test mt-3">
-                                <input type="text" name="space" style="width: 60px;">
-                            </div>
+                        <div class="col-8 test mt-3">
+                            <label class="float-right mt-1" for="space">Количество люстр (шт)</label>
+                        </div>
+                        <div class="col-4 test mt-3">
+                            <input type="text" name="space" style="width: 60px;">
+                        </div>
                     </div>
                 </div>
             </div>
